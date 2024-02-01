@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <!--Navigation-->
+    <section class="nav-header">
+        <nav>
+            <a href="index.html"><img src="/Images/Logo1.png" class="logo" alt="company logo"></a>
+            <div class="nav-links" id="navLinks">
+                <img src="/Images/close-icon.png" class="icon" onclick="hideMenu()">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="index.html">Services</a></li>
+                    <li><a href="index.html">Contact Us</a></li>
+                    <li><a href="index.html">Vacancies</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <img src="/Images/menu-icon.png" class="icon" onclick="showMenu()">
+        </nav>
+        <small>"Changing people's perspective using a different lens 📸 👁 📹"</small>
+        <section class="blog">
+            <h4>22nd October 2021</h4>
+            <img src="/Images/socials.jpg" alt="social-media">
+            <h2>The importance of Social Media for the Company</h2>
+            <p>Social media platforms help you connect with your customers, increase awareness about your brand, and boost your leads and
+            sales. With more than three billion people around the world using social media every month, the users and engagement on
+            major platforms just keep increasing. With such publicity, it would be good for Coverdot Creative Solutions in that it 
+            would be an easier and quicker way with which they can reach the masses all around the world. Due to the daily use of phones and 
+            other electronic devices, it creates immense opportunities for the company to advertise itself and raise awarenes about what it 
+            does.
+        </p>
+
+            <p>The use of social media also makes users less skeptical about the business and the services that it offers. Instead, 
+               letting your brand’s personality shine through in everything you share on social media makes it more and more authentic.
+               If we as a company could take advantage of social media, we build credibility not only to ourselves, but alos to other 
+               companies who would then come to us for our services too. 
+            </p>
+        </section>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <img src="/Images/logo1.png" alt="company-logo" class="footer-logo">
+            <p>Taking every opportunity that we have to ensure we give the ultimate experience to our valued customers.</p> 
+        </div>
+        <p class="copyright">&copy 2021, Coverdot Creative Solutions. All right reserved. Use of this site constitues acceptance of our 
+                            <a href="#">User Agreement</a> and <a href="#"> Privacy Policy and Cooke Statements.</a></p>
+    </section>
+
+    <!--JavaScript for Toggle Menu-->
+    
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

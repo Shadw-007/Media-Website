@@ -1,0 +1,365 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/***** Landing Page *****/
+/***** Header Section *****/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(4, 9, 30, 0.7)), url("/Images/lens.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.logo{
+    height: 100px;
+    margin-left: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+    transition: all 0.75s ease;
+}
+
+/***** Content (landing page) *****/
+.text-box{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.text-box h1{
+    font-size: 62px;
+    color: #fff;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.learn-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.learn-btn:hover{
+    border: 1px #f44336;
+    background: #f44336;
+    transition: 1s; 
+}
+
+nav .icon{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .icon{
+        display: block;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/***** About Section *****/
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    font-size:  14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+
+/***** Service Section *****/
+
+.service{
+    padding-top: 20px; 
+    text-align: center;
+    color: #fff;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(4, 9, 30, 0.7)), url("/Images/camera.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.service-box img{
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:  all 0.75s ease;
+}
+
+.service-box img:hover{
+    transform: scale(1.1);
+}
+
+.service-box h4{
+    color: white;
+    text-shadow: -2px 2px 2px #000;
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 45%;
+    opacity: 0;
+    transition: all 0.75s ease;
+}
+
+.service-box:hover h4{
+    opacity: 1;
+}
+
+.service-box{
+    position: relative;
+    margin-bottom: 30px;
+    
+}
+
+
+/***** Contact Section *****/
+
+.contact{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.contact h4{
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.contact p{
+    font-size: 12px;
+    text-align: justify;
+    padding-right: 35px;
+}
+
+.contact .t-icon{
+    width: 25px;
+}
+
+/***** Vacancies Section *****/
+
+.vacancy{
+    padding-top: 20px; 
+    text-align: center;
+    color: #fff;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(4, 9, 30, 0.7));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    padding: 100px 0;
+}
+
+
+.user-vacancy{
+    text-align: center;
+    box-shadow: 0 0 10px 1px #000;
+    margin-bottom: 30px;
+    padding-bottom: 50px
+}
+
+.user-vacancy p{
+    padding: 40px 10px 10px 10px;
+    color: #fff
+}
+
+.user-vacancy h5{
+    padding-top: 50px;
+}
+
+.vacancy img{
+    position: relative;
+    margin: -125px 0 20px 1%;
+    width: 8%;
+}
+
+.user-vacancy p::before{
+    display: block;
+    position: absolute;
+    font-size: 100px;
+    font-family: sans-serif;
+}
+
+.user-vacancy li{
+    list-style: none;
+    margin-right: 30px;
+    
+}
+
+/***** Blog Section *****/
+
+.nav-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(4, 9, 30, 0.7)), url("/Images/landscape.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+small{
+    padding-top: 5px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.blog{
+    text-align: left;
+    color: #fff;
+    box-shadow: 0 0 10px 1px #000;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+}
+
+.blog img{
+    display: block;
+    height: 500px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog h2{
+    padding-top: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.blog p{
+    text-align: center; 
+    padding: 40px 10px 0px 10px;
+    color: #fff
+}
+
+
+/***** Footer Section *****/
+.footer{
+    padding: 20px 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(4, 9, 30, 0.7))
+}
+
+.footer-logo{
+    display: block;
+    width: 85px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer p{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer .copyright{
+    text-align: center;
+    font-weight: 200;
+    margin-top: 20px; 
+    margin-bottom: 0;
+}
